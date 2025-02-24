@@ -325,10 +325,12 @@ const CaseTable = () => {
       <Grid container size={{ xs: 12, lg: 12 }} spacing={2} columns={12}>
         <div style={{ height: 'calc(100vh - 250px)', width: '100%', marginTop: '24px' }}>
           <DataGrid
+            columnBufferPx={10}
             hideFooterPagination
             hideFooterSelectedRowCount
             disableRowSelectionOnClick
-            getRowHeight={() => 66}
+            rowHeight={66}
+            //getRowHeight={() => 66}
             columnHeaderHeight={40}
             getEstimatedRowHeight={() => 66}
             rows={rows}

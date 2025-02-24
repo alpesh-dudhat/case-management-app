@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# Case Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based Case Management Dashboard that provides features such as filtering, pagination, column selection, and batch actions for managing cases. It uses Material-UI components for styling and Zustand for state management.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
+- **Sidebar Navigation**: Navigate between different case statuses.
+- **Case Table**: View cases with sorting, filtering, and column visibility options.
+- **Filters**: Search cases by keywords.
+- **Batch Actions**: Update the status of multiple cases at once.
+- **Pagination**: Navigate through large datasets efficiently.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites
+Ensure you have the following installed:
+- Node.js (v14 or later)
+- npm or yarn package manager
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Installation Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the Repository**
+git clone <repository-url>
+cd <repository-folder>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install Dependencies**
+Run the following command to install all required dependencies:
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+or if you're using Yarn:
+yarn install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start the Development Server**
+Run the following command to start the application:
+npm start
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Access the Application**
+Open your browser and navigate to `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+src/
+├── components/
+│ ├── Sidebar.jsx # Sidebar navigation menu
+│ ├── Dashboard.jsx # Main dashboard component
+│ ├── CaseTable.jsx # Table displaying cases
+│ ├── Header.jsx # Header with filters and batch actions
+│ ├── Filters.jsx # Search and filter functionality
+│ ├── Pagination.jsx # Pagination controls
+│ ├── BatchActions.jsx # Batch status update actions
+│ ├── ColumnSelector.jsx # Column visibility toggle menu
+├── store/
+│ └── useCaseStore.jsx # Zustand store for state management
+└── App.js # Main application entry point
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Dependencies
 
-### Code Splitting
+The project relies on the following key libraries:
+- **React**: Frontend framework.
+- **Material-UI**: UI components and styling.
+- **Zustand**: State management.
+- **Axios**: HTTP client for API requests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Sidebar Navigation
+The sidebar allows you to switch between different case statuses (e.g., All Cases, Pending Cases, Accepted Cases, Rejected Cases).
 
-### Making a Progressive Web App
+### Filtering Cases
+Use the search bar in the header to filter cases by keywords.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Batch Actions
+Select multiple cases from the table and use batch actions to update their status.
 
-### Advanced Configuration
+### Pagination
+Navigate through pages using pagination controls at the bottom of the table.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Column Visibility
+Click on the column selector in the header to toggle visibility of specific columns.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Build the project for production:
+npm run build
+
+2. Deploy the `build/` directory to your hosting service.
+
+---
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m "Add feature"`).
+4. Push to your branch (`git push origin feature-name`).
+5. Open a pull request.
+
+
+
+

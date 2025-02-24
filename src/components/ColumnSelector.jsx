@@ -1,4 +1,3 @@
-// ColumnSelector.jsx
 import React, { useState } from 'react';
 import { Button, Menu, MenuItem, Checkbox, FormControlLabel } from '@mui/material';
 import useCaseStore from '../store/useCaseStore';

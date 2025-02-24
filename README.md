@@ -98,7 +98,7 @@ Click on the column selector in the header to toggle visibility of specific colu
 1. Build the project for production:
 npm run build
 
-2. Deploy the `build/` directory to your hosting service.
+2. Deploy the `build/` directory to your hosting service. Chnage API url to get the data and allow CORS on server.
 
 ---
 

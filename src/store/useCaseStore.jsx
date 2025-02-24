@@ -3,7 +3,7 @@ import axios from 'axios';
 import debounce from 'lodash.debounce';
 
 const COLUMN_VISIBILITY_KEY = 'columnVisibility';
-const API_BASE_URL = process.env.BASE_URL || 'http://localhost:3000';
+// const API_BASE_URL = process.env.BASE_URL || 'http://localhost:3000';
 
 
 const useCaseStore = create((set,get) => ({
@@ -68,7 +68,7 @@ const useCaseStore = create((set,get) => ({
       const { status, search, sort, order } = filters;
       const { page, limit } = pagination;
 
-      const response = await axios.get(`${API_BASE_URL}/requests`, {
+      const response = await axios.get(`/requests`, {
         params: { status, search, sort, order, page, limit },
       });
 
@@ -105,7 +105,7 @@ const useCaseStore = create((set,get) => ({
  
   updateCaseStatus: async (ids, status) => {
     try {
-      const response = await axios.put(`${API_BASE_URL}/update-status`, {
+      const response = await axios.put(`}/update-status`, {
         ids,
         status,
       });

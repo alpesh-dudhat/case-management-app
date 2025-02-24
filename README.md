@@ -42,27 +42,6 @@ npm start
 4. **Access the Application**
 Open your browser and navigate to `http://localhost:3000`.
 
----
-
-## Project Structure
-
-src/
-├── components/
-│ ├── Sidebar.jsx # Sidebar navigation menu
-│ ├── Dashboard.jsx # Main dashboard component
-│ ├── CaseTable.jsx # Table displaying cases
-│ ├── Header.jsx # Header with filters and batch actions
-│ ├── Filters.jsx # Search and filter functionality
-│ ├── Pagination.jsx # Pagination controls
-│ ├── BatchActions.jsx # Batch status update actions
-│ ├── ColumnSelector.jsx # Column visibility toggle menu
-├── store/
-│ └── useCaseStore.jsx # Zustand store for state management
-└── App.js # Main application entry point
-
-
----
-
 ## Dependencies
 
 The project relies on the following key libraries:
